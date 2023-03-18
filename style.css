@@ -1,0 +1,291 @@
+body {
+  background-color: white;
+}
+
+header {
+  background-color: var(--dark);
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+#main_logo{
+  height: 450px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#search {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#search-box {
+  margin: 0 auto;
+  background-color: transparent;
+  width: 40vw;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  padding: 0.75rem 0;
+  gap: 1rem;
+  border-bottom: 2px solid #6e6e6e;
+
+}
+
+#search-icon {
+  user-select: none;
+  width: 35px;
+  height: 35px;
+}
+
+#search-input {
+  font-family:inherit;
+  width: 100%;
+  background-color: transparent;
+  font-size: 2rem;
+  color: white;
+  caret-color: white;
+  padding: 0;
+}
+
+#suggestion-box {
+  background-color: white;
+  max-height: 280px;
+  overflow-y: auto;
+  width: 40vw;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: 2;
+  display: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.sug-item {
+  padding: 0.5rem;
+  transition: 0.1s ease;
+  display:block;
+}
+
+.sug-item:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+#trending {
+  font-size: 0.7rem;
+  color: rgba(0,0,0,0.7);
+  padding: 0.5rem;
+}
+
+
+
+#browse-articles{
+  width: 100%;
+  padding: 4rem 2rem;
+}
+.heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.heading-img {
+  width: 50px;
+}
+
+#ba-title{
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+#ba-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.ba-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  gap: 1rem;
+}
+
+.card-name {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-img{
+  width: 100%;
+  height: 160px;
+  object-fit:cover;
+}
+
+
+#section2{
+  background:rgba(0,0,0,0.05);
+  display: flex;
+  padding: 4rem 2rem;
+  gap: 5rem;
+}
+
+
+#guides{
+  flex: 2
+}
+
+
+#topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+.topic {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.topic-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  transition: 0.2s;
+}
+
+.topic-title:hover {
+  letter-spacing: 5px
+}
+
+
+.topic-img{
+  width: 100%;
+  height: 160px;
+  object-fit:cover;
+  display: block;
+}
+
+#new{
+  flex: 1
+}
+
+#new-box {
+  display:flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.new-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.new-img {
+  width: 50px;
+  height:50px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: var(--dark);
+  color: white;
+  padding: 4rem 2rem;
+}
+
+#f-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#footer-logo {
+  width: 300px;
+}
+
+#f-center{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#quick-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.quick-link {
+  transition: 0.2s
+}
+
+.quick-link:hover {
+  transform: translateX(5px)
+}
+
+#f-right{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column
+}
+
+#contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  gap: 1rem;
+}
+
+
+@media (max-width: 480px) {
+}
+

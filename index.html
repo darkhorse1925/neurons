@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Neuro Marvel</title>
+  </head>
+  <body>
+
+    <header>
+
+      <canvas id="particle-area"></canvas>
+      <img id="main_logo" src="./images/nm-header.png" alt="logo of neuro marvel">
+
+      <div id="search">
+        <div id="search-box">
+          <img id="search-icon" src="./images/search.svg" alt="search" draggable="false">
+          <input id="search-input" type="text" placeholder="Find answers and resources">
+        </div>
+        <div id="suggestion-box"></div>
+      </div>
+
+    </header>
+
+
+    <section id="browse-articles">
+      <div class="heading-container">
+        <img src="./images/top.png" class="heading-img" alt="top articles">
+        <h3 id="ba-title">Top Articles</h3>
+      </div>
+      <div id="ba-container">
+
+        <!--Article 1-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="./images/Dementia.jpg" alt="Image of Dementia">
+          <a class="card-name" href="/">Alzheimer's disease</a>
+        </div>
+        <!--Article 2-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="./images/Epilepsy.jpg" alt="Image of Epilepsy">
+          <a class="card-name" href="/Epilepsy.html">Epilepsy</a>
+        </div>
+        <!--Article 3-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="./images/migraine.webp" alt="Image of Migraine">
+          <a class="card-name" href="/">Headache & Migraine</a>
+        </div>
+        <!--Article 4-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="./images/multiple-sclerosis.avif" alt="Image of Sclerosis">
+          <a class="card-name" href="/">Multiple Sclerosis</a>
+        </div>
+        <!--Article 5-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="./images/multiple-sclerosis.avif" alt="Image of Sclerosis">
+          <a class="card-name" href="/">Multiple Sclerosis</a>
+        </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--SECTION2-->
+    <section id="section2">
+
+      <div id="guides">
+        <div class="heading-container">
+          <img src="./images/book.png" class="heading-img" alt="top articles">
+          <h3 id="ba-title">Guides by Topic</h3>
+        </div>
+        <div id="topic-grid">
+          <a href="./game/number-recall.html" class="topic">
+            <div class="topic-title">Dementia</div>
+            <img class="topic-img" src="./images/Dementia.jpg" alt="Image of Dementia">
+          </a>
+          <a href="/" class="topic">
+            <div class="topic-title">Migraine</div>
+            <img class="topic-img" src="./images/migraine.webp" alt="Image of Dementia">
+          </a>
+          <a href="/" class="topic">
+            <div class="topic-title">Sclerosis</div>
+            <img class="topic-img" src="./images/multiple-sclerosis.avif" alt="Image of Dementia">
+          </a>
+          <a href="/" class="topic">
+            <div class="topic-title">Epilepsy</div>
+            <img class="topic-img" src="./images/Epilepsy.jpg" alt="Image of Dementia">
+          </a>
+        </div>
+      </div>
+
+      <!--Whats new-->
+      <div id="new">
+        <div class="heading-container">
+          <img src="./images/new.png" class="heading-img" alt="top articles">
+          <h3 id="ba-title">What's New?</h3>
+        </div>
+
+        <div id="new-box">
+
+          <div class="new-item">
+            <img class="new-img" src="./images/Epilepsy.jpg" alt="Image of Dementia">
+            <div class="new-title">Epilepsy the cause and ite cure</div>
+          </div>
+          <div class="new-item">
+            <img class="new-img" src="./images/Epilepsy.jpg" alt="Image of Dementia">
+            <div class="new-title">Epilepsy the cause and ite cure</div>
+          </div>
+          <div class="new-item">
+            <img class="new-img" src="./images/Epilepsy.jpg" alt="Image of Dementia">
+            <div class="new-title">Epilepsy the cause and ite cure</div>
+          </div>
+          <div class="new-item">
+            <img class="new-img" src="./images/Epilepsy.jpg" alt="Image of Dementia">
+            <div class="new-title">Epilepsy the cause and ite cure</div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      <div id="f-left">
+        <img id="footer-logo" src="images/neuro-marvel-logo.jpeg" alt="Neuro Marvel logo">
+      </div>
+      <div id="f-center">
+        <h3 id ="center-title">Quick Links</h3>
+        <div id="quick-links">
+          <a href="#" class="quick-link">Destinations</a>
+          <a href="#" class="quick-link">Country Index</a>
+          <a href="#" class="quick-link">Life Style</a>
+          <a href="#" class="quick-link">Tips & Hacks</a>
+          <a href="#" class="quick-link">NFT World</a>
+        </div>
+      </div>
+      <div id="f-right">
+        <h3 id ="center-title">Contacts</h3>
+        <div id="contacts">
+          <div>Meydan Free Zone Business Centre, M-Floor, Nad Al Sheba 1, Dubai, United Arab Emirates.</div>
+          <div>nijanth.m@gmail.com</div>
+          <div>+1 234 567 89</div>
+        </div>
+      </div>
+    </footer>
+
+    <script  src="./particle.js"></script>
+    <script  src="./main.js"></script>
+  </body>
+</html>

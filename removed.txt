@@ -1,0 +1,109 @@
+    <section id="browse-articles">
+      <h3 id="ba-title">Browse Articles</h3>
+      <div id="ba-container">
+        <!--Article 1-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="/images/Dementia.jpg" alt="Image of Dementia">
+          <a class="card-name" href="/">Dementia & Alzheimer's disease</a>
+          <div class="sublink-container">
+            <a class="sublink" href="#">Apple</a>
+            <a class="sublink" href="#">Mango</a>
+            <a class="sublink" href="#">Orange</a>
+            <a class="sublink" href="#">Bananna</a>
+          </div>
+        </div>
+        <!--Article 2-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="/images/Epilepsy.jpg" alt="Image of Epilepsy">
+          <a class="card-name" href="/Epilepsy.html">Epilepsy</a>
+          <div class="sublink-container">
+            <a class="sublink" href="#">Apple</a>
+            <a class="sublink" href="#">Mango</a>
+            <a class="sublink" href="#">Orange</a>
+            <a class="sublink" href="#">Bananna</a>
+          </div>
+        </div>
+        <!--Article 3-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="/images/migraine.webp" alt="Image of Migraine">
+          <a class="card-name" href="/">Headache & Migraine</a>
+          <div class="sublink-container">
+            <a class="sublink" href="#">Apple</a>
+            <a class="sublink" href="#">Mango</a>
+            <a class="sublink" href="#">Orange</a>
+            <a class="sublink" href="#">Bananna</a>
+          </div>
+        </div>
+        <!--Article 4-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="/images/multiple-sclerosis.avif" alt="Image of Sclerosis">
+          <a class="card-name" href="/">Multiple Sclerosis</a>
+          <div class="sublink-container">
+            <a class="sublink" href="#">Apple</a>
+            <a class="sublink" href="#">Mango</a>
+            <a class="sublink" href="#">Orange</a>
+            <a class="sublink" href="#">Bananna</a>
+          </div>
+        </div>
+        <!--Article 4-->
+        <div class="ba-card" href="#">
+          <img class="card-img" src="/images/multiple-sclerosis.avif" alt="Image of Sclerosis">
+          <h4 class="card-name">Multiple Sclerosis</h4>
+          <div class="sublink-container">
+            <a class="sublink" href="#">Apple</a>
+            <a class="sublink" href="#">Mango</a>
+            <a class="sublink" href="#">Orange</a>
+            <a class="sublink" href="#">Bananna</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+#browse-articles{
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+#ba-title{
+  font-weight: bold;
+}
+
+#ba-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.ba-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; 
+  gap: 1rem;
+}
+
+.card-name {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-img{
+  width: 100%;
+  height: 160px;
+  object-fit:cover;
+}
+
+.sublink-container {
+}
+
+.sublink {
+  display: block;
+  color: grey;
+  transition: 0.2s;
+}
+
+.sublink:hover {
+  color: var(--dark);
+  transform:translateX(5px)
+}
